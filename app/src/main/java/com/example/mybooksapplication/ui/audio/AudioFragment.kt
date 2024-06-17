@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.mybooksapplication.R
 import com.example.mybooksapplication.databinding.FragmentAudioBinding
 
@@ -56,6 +57,10 @@ class AudioFragment : Fragment() {
                 isPlaying = false
                 binding.playButton.setImageResource(R.drawable.polygon_3)
             }
+        }
+
+        binding.ivArrowBack.setOnClickListener {
+            findNavController().navigateUp()
         }
 
         binding.stopButton.setOnClickListener {

@@ -27,9 +27,9 @@ class DetailsFragment : Fragment() {
         binding.ivArr.setOnClickListener {
             findNavController().navigateUp()
         }
-        binding.btnNtxt.setOnClickListener {
-            findNavController().navigate(R.id.testForStarFragment)
-        }
+//        binding.btnNtxt.setOnClickListener {
+//            findNavController().navigate(R.id.testForStarFragment)
+//        }
         binding.tvCon.setOnClickListener {
             findNavController().navigate(R.id.audioFragment)
         }

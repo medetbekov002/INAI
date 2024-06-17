@@ -40,8 +40,8 @@ class MenuFragment : Fragment() {
         binding.tvInformation.setOnClickListener {
             findNavController().navigate(R.id.aboutAppFragment)
         }
-        binding.tvConnectWith.setOnClickListener {
-            findNavController().navigate(R.id.contactsFragment)
-        }
+//        binding.tvConnectWith.setOnClickListener {
+//            findNavController().navigate(R.id.contactsFragment)
+//        }
     }
 }

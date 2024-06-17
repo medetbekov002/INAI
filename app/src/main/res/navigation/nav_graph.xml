@@ -49,7 +49,11 @@
         android:id="@+id/audioFragment"
         android:name="com.example.mybooksapplication.ui.audio.AudioFragment"
         android:label="fragment_audio"
-        tools:layout="@layout/fragment_audio" />
+        tools:layout="@layout/fragment_audio" >
+        <action
+            android:id="@+id/action_audioFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.example.mybooksapplication.ui.detail_for_star.DetailsFragment"

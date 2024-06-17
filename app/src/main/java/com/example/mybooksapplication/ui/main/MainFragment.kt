@@ -30,9 +30,9 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.ivVanGogBook.setOnClickListener {
-            findNavController().navigate(R.id.audioStarFragment)
-        }
+//        binding.ivVanGogBook.setOnClickListener {
+//            findNavController().navigate(R.id.audioStarFragment)
+//        }
 
         binding.ivMenu.setOnClickListener {
             findNavController().navigate(R.id.menuFragment)
