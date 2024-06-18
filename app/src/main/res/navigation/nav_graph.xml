@@ -51,8 +51,8 @@
         android:label="fragment_audio"
         tools:layout="@layout/fragment_audio" >
         <action
-            android:id="@+id/action_audioFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_audioFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
@@ -103,22 +103,30 @@
         android:id="@+id/detailForEdgeFragment"
         android:name="com.example.mybooksapplication.ui.detail_for_star.DetailForEdgeFragment"
         android:label="fragment_detail_for_edge"
-        tools:layout="@layout/fragment_detail_for_edge" />
+        tools:layout="@layout/fragment_detail_for_edge" >
+        <action
+            android:id="@+id/action_detailForEdgeFragment_to_libFragment"
+            app:destination="@id/libFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailDuneFragment"
         android:name="com.example.mybooksapplication.ui.detail_for_star.DetailDuneFragment"
         android:label="fragment_detail_dune"
-        tools:layout="@layout/fragment_detail_dune" />
+        tools:layout="@layout/fragment_detail_dune" >
+        <action
+            android:id="@+id/action_detailDuneFragment_to_libFragment"
+            app:destination="@id/libFragment" />
+    </fragment>
+    <!-- Add this to your nav_graph.xml -->
     <fragment
         android:id="@+id/audioStarFragment"
         android:name="com.example.mybooksapplication.ui.audio.AudioStarFragment"
-        android:label="fragment_audio_star"
-        tools:layout="@layout/fragment_audio_star" />
-    <fragment
-        android:id="@+id/contactsFragment"
-        android:name="com.example.mybooksapplication.ui.contacts.ContactsFragment"
-        android:label="fragment_contacts"
-        tools:layout="@layout/fragment_contacts" />
+        android:label="audio_star_fragment">
+        <action
+            android:id="@+id/action_audioStarFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="com.example.mybooksapplication.ui.contacts.AboutAppFragment"
@@ -128,10 +136,23 @@
         android:id="@+id/audioTheEdgeFragment"
         android:name="com.example.mybooksapplication.ui.audio.AudioTheEdgeFragment"
         android:label="fragment_audio_the_edge"
-        tools:layout="@layout/fragment_audio_the_edge" />
+        tools:layout="@layout/fragment_audio_the_edge" >
+        <action
+            android:id="@+id/action_audioTheEdgeFragment_to_detailForEdgeFragment"
+            app:destination="@id/detailForEdgeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/audioDumeFragment"
         android:name="com.example.mybooksapplication.ui.audio.AudioDumeFragment"
         android:label="fragment_audio_dume"
-        tools:layout="@layout/fragment_audio_dume" />
+        tools:layout="@layout/fragment_audio_dume" >
+        <action
+            android:id="@+id/action_audioDumeFragment_to_detailDuneFragment"
+            app:destination="@id/detailDuneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mybooksapplication.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>

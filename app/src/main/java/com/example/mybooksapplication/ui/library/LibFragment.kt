@@ -26,7 +26,7 @@ class LibFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.ivArrowBack.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.menuFragment)
         }
         binding.bk3.setOnClickListener {
             findNavController().navigate(R.id.detailsFragment)

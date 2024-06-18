@@ -36,5 +36,8 @@ class DetailForEdgeFragment : Fragment() {
         binding.tvCon3.setOnClickListener{
             findNavController().navigate(R.id.audioTheEdgeFragment)
         }
+        binding.ivArr.setOnClickListener {
+            findNavController().navigate(R.id.libFragment)
+        }
     }
 }

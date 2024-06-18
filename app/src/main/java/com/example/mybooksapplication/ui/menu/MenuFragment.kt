@@ -26,7 +26,7 @@ class MenuFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.tvMainSc.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.mainFragment)
         }
         binding.tvMyProfile.setOnClickListener {
             findNavController().navigate(R.id.profileFragment)

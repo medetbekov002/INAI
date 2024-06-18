@@ -25,11 +25,11 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.ivArr.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.libFragment)
         }
-//        binding.btnNtxt.setOnClickListener {
-//            findNavController().navigate(R.id.testForStarFragment)
-//        }
+        binding.btnNtxt.setOnClickListener {
+            findNavController().navigate(R.id.testForStarFragment)
+        }
         binding.tvCon.setOnClickListener {
             findNavController().navigate(R.id.audioFragment)
         }

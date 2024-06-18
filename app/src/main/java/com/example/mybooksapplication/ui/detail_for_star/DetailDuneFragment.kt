@@ -33,5 +33,9 @@ class DetailDuneFragment : Fragment() {
         binding.tvCon3.setOnClickListener {
             findNavController().navigate(R.id.audioDumeFragment)
         }
+
+        binding.ivArr.setOnClickListener {
+            findNavController().navigate(R.id.libFragment)
+        }
     }
 }

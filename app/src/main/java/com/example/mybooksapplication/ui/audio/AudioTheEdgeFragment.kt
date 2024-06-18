@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
+import androidx.navigation.fragment.findNavController
 import com.example.mybooksapplication.R
 import com.example.mybooksapplication.databinding.FragmentAudioTheEdgeBinding
 
@@ -64,6 +65,10 @@ class AudioTheEdgeFragment : Fragment() {
             binding.seekBar.progress = 0
             mediaPlayer.start()
             binding.playButton.setImageResource(R.drawable.play)
+        }
+
+        binding.ivArrowBack.setOnClickListener {
+            findNavController().navigate(R.id.detailForEdgeFragment)
         }
 
         binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {

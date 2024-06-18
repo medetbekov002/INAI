@@ -30,12 +30,20 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.ivVanGogBook.setOnClickListener {
-//            findNavController().navigate(R.id.audioStarFragment)
-//        }
+        binding.tvPopulars.setOnClickListener {
+            findNavController().navigate(R.id.audioStarFragment)
+        }
+
+        binding.tvPopulars2.setOnClickListener {
+            findNavController().navigate(R.id.audioStarFragment)
+        }
 
         binding.ivMenu.setOnClickListener {
             findNavController().navigate(R.id.menuFragment)
+        }
+
+        binding.imageView2.setOnClickListener {
+            findNavController().navigate(R.id.searchFragment)
         }
         val list = arrayListOf<Int>()
         adapter = BooksAdapter(list)

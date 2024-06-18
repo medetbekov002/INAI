@@ -59,10 +59,6 @@ class AudioFragment : Fragment() {
             }
         }
 
-        binding.ivArrowBack.setOnClickListener {
-            findNavController().navigateUp()
-        }
-
         binding.stopButton.setOnClickListener {
             mediaPlayer.pause()
             mediaPlayer.seekTo(0)
@@ -70,6 +66,10 @@ class AudioFragment : Fragment() {
             binding.seekBar.progress = 0
             mediaPlayer.start() // добавлен вызов метода start()
             binding.playButton.setImageResource(R.drawable.play)
+        }
+
+        binding.ivArrowBack.setOnClickListener {
+            findNavController().navigate(R.id.detailsFragment)
         }
 
         binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
