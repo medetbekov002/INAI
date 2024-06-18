@@ -36,7 +36,7 @@ class SearchFragment : Fragment() {
             )
         }, 200)
         binding.btnCancel.setOnClickListener {
-            findNavController().navigateUp()
+            findNavController().navigate(R.id.mainFragment)
         }
     }
 
