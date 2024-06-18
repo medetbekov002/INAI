@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.airbnb.lottie.LottieAnimationView
 import com.example.mybooksapplication.R
 import com.example.mybooksapplication.databinding.FragmentMainBinding
 import com.example.mybooksapplication.ui.main.BooksAdapter
@@ -17,6 +18,7 @@ class MainFragment : Fragment() {
     private lateinit var binding: FragmentMainBinding
     private lateinit var adapter: BooksAdapter
     private lateinit var adapter2: BooksAdapter2
+//    private lateinit var lottieAnimationView: LottieAnimationView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,6 +31,12 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+//        lottieAnimationView = binding.lottieAnimationView
+//        binding.lottieAnimationView.setAnimation(R.raw.animation2)
+//        lottieAnimationView.setAnimation(R.raw.animation)
+//        binding.lottieAnimationView.playAnimation() // Play the animation
+//        binding.lottieAnimationView.loop(true) // Loop the animation
 
         binding.tvPopulars.setOnClickListener {
             findNavController().navigate(R.id.audioStarFragment)
